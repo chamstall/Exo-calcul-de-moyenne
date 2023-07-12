@@ -11,11 +11,15 @@ entrer.addEventListener("click" , (e)=>{
         }
         tableau.push(parseFloat(input.value));
         console.log(tableau);
-        input.value = "";
 });
 form.addEventListener("submit" , (e) =>{
         e.preventDefault();
-        calculMoyenne(tableau);
+        if(input.value === "" || isNaN(input.value)){
+            console.log("input vide");
+        }
+        else{
+            calculMoyenne(tableau);
+        }
 });
 function calculMoyenne(tab){
         if (tab.length === 0) {
