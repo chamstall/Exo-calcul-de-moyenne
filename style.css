@@ -1,12 +1,12 @@
-.card{
+.firstcard , .secondcard{
     background-color: rgba(000,000,000, 0.8);
     color:#fff;
     box-shadow: 0px  0px 12px #FFC107;
     width: 320px;
-    height: 120px;
+    height: 135px;
     margin: auto;
     text-align: center;
-    padding: 5px;
+    padding: 3px;
 }
 @media(max-width:350px){
     .card{

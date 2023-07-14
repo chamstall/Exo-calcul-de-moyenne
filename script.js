@@ -31,10 +31,14 @@ function calculMoyenne(tab){
         },0)
         const moyenne = total/tab.length ;
         console.log("la moyenne est :" + "" + moyenne);
-        let card = document.querySelector(".card");
-        card.classList.remove("d-none");
-        card.classList.add("d-block");
-        card.innerHTML =`la moyenne est : ${moyenne} `;
+        let firstCard = document.querySelector(".firstcard");
+        firstCard.classList.remove("d-none");
+        firstCard.classList.add("d-block");
+        firstCard.innerHTML = `Les nombres que vous avez saisis sont : ${tableau}`
+        let secondCard = document.querySelector(".secondcard");
+        secondCard.classList.remove("d-none");
+        secondCard.classList.add("d-block");
+        secondCard.innerHTML =` la moyenne des nombres saisis est : ${moyenne} `;
 }
 
 
